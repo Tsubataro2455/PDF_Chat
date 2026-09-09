@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: pdf_chat_app
+    volumes:
+      - .:/app
+    ports:
+      - 8501:8501
+    env_file:
+      - .env
